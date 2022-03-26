@@ -6,11 +6,11 @@ from soupsieve import escape
 app = Flask(__name__)
 
 @app.route("/api")
-def data(country = "US"):
-    country = request.args.get("country", "US")
+def data():
+    state = request.args.get("state", "New York")
     day = request.args.get("day", 1)
     data = {
-        "cases" : "tba"
+        "cases" : "69420"
     }
     return jsonify(data);
 

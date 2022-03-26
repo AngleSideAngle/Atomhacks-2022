@@ -1,0 +1,36 @@
+/* variables */
+:root {
+    --background: #F6F6F8;
+    --foreground: #E3E3E3;
+    --accent: #C60021;
+
+    --padding: 1rem;
+    
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background);
+    
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    background-color: var(--foreground);
+    padding: var(--padding);
+    font-weight: bold;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+main {
+    padding: var(--padding);
+}
