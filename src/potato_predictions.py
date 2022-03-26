@@ -7,10 +7,11 @@ app = Flask(__name__)
 
 @app.route("/api")
 def data():
+    print(request.data)
     state = request.args.get("state", "New York")
-    day = request.args.get("day", 1)
+    day = request.args.get("days", 1)
     data = {
-        "cases" : "69420"
+        "cases" : day
     }
     return jsonify(data);
 

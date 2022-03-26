@@ -4,33 +4,32 @@
     --foreground: #E3E3E3;
     --accent: #C60021;
 
-    --padding: 1rem;
-    
+    --padding: 2rem;
+    --scaled-padding: 5%;
 }
 
 * {
     font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
-}
-
-body {
     background-color: var(--background);
-    
 }
 
-nav {
-    position: sticky;
-    width: 100%;
-    background-color: var(--foreground);
+.title {
     padding: var(--padding);
-    font-weight: bold;
-}
-
-nav > ul {
-    list-style: none;
+    background-color: var(--foreground);
+    font-weight: bolder;
+    font-size: xx-large;
 }
 
 main {
-    padding: var(--padding);
+    padding-top: calc(var(--scaled-padding));
+    padding-left: calc(var(--scaled-padding));
+    padding-right: calc(var(--scaled-padding));
+    background-color: var(--background);
+}
+
+#result {
+    font-weight: bold;
+    font-size: large;
 }
